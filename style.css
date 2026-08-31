@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    width: 90%;
+    max-width: 450px;
+    padding: 30px 40px;
+    border-radius: 10px;
+    color: white;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 35px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+form a {
+    text-decoration: none;
+    color: white;
+}
+
+.input-box{
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.input-box input {
+    flex: 1;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    color: white;
+    min-width: 0;
+}
+
+.input-box input::placeholder{
+    color: white;
+}
+
+.remember-password{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 14.5px;
+}
+
+.remember-password label{
+    display: flex;
+    align-items: center;
+}
+
+.remember-password input{
+    margin-right: 5px;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+.btn{
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.register_link{
+    text-align: center;
+    font-size: 14.5px;
+}
+
+.register_link a {
+    margin-left: 8px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;       /* separa del login */
+  color: #fff;               /* blanco para contraste */
+}
+
+.title h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #32CD32;            /* verde llamativo */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* sombra para destacar */
+}
+
+.title .subtitle {
+  font-size: 18px;
+  margin-top: 10px;
+  font-style: italic;
+  color: #f0f0f0;            /* gris claro */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* centra verticalmente */
+}
+
+.logo-esquina {
+    position: absolute;
+    top: 20px;   /* Distancia desde arriba */
+    left: 20px;  /* Distancia desde la izquierda */
+    width: 120px; /* Ajusta el tamaño para que no sea gigante */
+    z-index: 1000; /* Asegura que el logo quede por encima de otros elementos */
+}
+
+.menu-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
+  z-index: 1000;
+}
+
+/* Estilo del botón */
+.menu-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Ocultar las opciones por defecto */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+/* Estilo de los enlaces */
+.dropdown-content a {
+  color: #333333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Efecto al pasar el cursor por cada opción */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Mostrar las opciones al pasar el mouse */
+.menu-container:hover .dropdown-content,
+.menu-container:focus-within .dropdown-content {
+  display: block;
+}
+
