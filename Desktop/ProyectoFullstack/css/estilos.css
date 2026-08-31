@@ -1,0 +1,79 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+
+/* Barra de navegación */
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+
+/* Sección principal */
+
+.hero {
+    background-color: #212529;
+    color: white;
+}
+
+
+/* Títulos */
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+
+/* Cards */
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Imágenes de los productos */
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 0;
+}
+
+
+
+.form-control {
+    border: 1px solid #dee2e6;
+    transition: all 0.2s ease;
+}
+
+.form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+.form-label {
+    color: #343a40;
+}
+
+.btn-primary {
+    transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+}
