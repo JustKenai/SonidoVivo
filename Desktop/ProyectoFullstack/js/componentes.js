@@ -1,5 +1,5 @@
-function cargarNavbar(){
-    if(!navbar) return;
+function cargarNavbar() {
+    if (!navbar) return;
 
     navbar.innerHTML = `
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -42,38 +42,44 @@ function cargarNavbar(){
     marcarPaginaActual();
 
     function marcarPaginaActual() {
-    const paginaActual = window.location.pathname.split("/").pop() || "index.html";
+        const paginaActual = window.location.pathname.split("/").pop() || "index.html";
 
-    const enlaces = document.querySelectorAll("#navbar .nav-link");
+        const enlaces = document.querySelectorAll("#navbar .nav-link");
 
-    enlaces.forEach(enlace => {
-        const paginaEnlace = enlace.getAttribute("href");
+        enlaces.forEach(enlace => {
+            const paginaEnlace = enlace.getAttribute("href");
 
-        if (paginaEnlace === paginaActual) {
-            enlace.classList.add("active");
-            enlace.setAttribute("aria-current", "page");
-        }
-    });
+            if (paginaEnlace === paginaActual) {
+                enlace.classList.add("active");
+                enlace.setAttribute("aria-current", "page");
+            }
+        });
+    }
 }
-}
 
-function cargarFooter(){
+function cargarFooter() {
     const footer = document.querySelector("#footer");
     if (!footer) return;
 
     footer.innerHTML = `
         <footer class="footer-border p-5  bg-dark">
         <ul>
+
             <li>
-                <a href="https://maps.app.goo.gl/gZx5wtMMATmcMQdz8">
-                    <p style="color: #ffffff;">
-                        Encuéntranos aqui:
-                    </p>
+                <p style="color: #FFFFFF;">
+                    Encuéntranos aqui:
+                </p>
+                <a style="color: #FFFFFF;"  class="nav-link" href="https://maps.app.goo.gl/gZx5wtMMATmcMQdz8">
+                    2354 Álvarez Viña del Mar, Valparaíso
                 </a>
             </li>
-                    <p style="color: #FFFFFF;">
-                        2354 Álvarez Viña del Mar, Valparaíso
-                    </p>
+
+            <li class="nav-item">
+                <a style="color: #FFFFFF;"class="nav-link" href="contactanos.html">
+                    Contactanos
+                 </a>
+            </li>
+
             <li>
                 <p style="color: #ffffff;">
                     &copy; Sonido vivo | Todos los derechos reservados
