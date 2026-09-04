@@ -2,9 +2,11 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
 }
 
+.bg-custom-gray {
+    background-color: #dcdcdc;
+}
 
 /* Barra de navegación */
 
@@ -13,11 +15,15 @@ body {
 }
 
 
+.nav-top-border {
+    border-bottom: 2px solid #333;
+}
+
 /* Sección principal */
 
-.hero {
-    background-color: #212529;
-    color: white;
+.hero-section {
+            background-color: #e6e6e6;
+            border: 1px solid #777;
 }
 
 
@@ -39,6 +45,10 @@ h2 {
     transform: translateY(-5px);
 }
 
+.product-card {
+    background-color: #e6e6e6;
+    border: none;
+}
 
 /* Imágenes de los productos */
 
@@ -47,13 +57,20 @@ h2 {
     object-fit: cover;
 }
 
-
+.product-img {
+    height: 180px;
+    object-fit: cover;
+    border: 1px solid #999;
+}
 /* Footer */
 
 footer {
     margin-top: 0;
 }
 
+.footer-border {
+    border-top: 2px solid #333;
+}
 
 
 .form-control {
